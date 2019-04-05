@@ -1,9 +1,8 @@
 CREATE TABLE model (
 	id int NOT NULL AUTO_INCREMENT COMMENT "模块ID",
 	modelname varchar(64) NOT NULL COMMENT "模块名称",
-	user_id int DEFAULT 1 "用户ID",
-	gmt_create timestamp DEFAULT CURRENT_TIMESTAMP COMMENT "创建时间",
+	gmt_create timestamp DEFAULT '0000-00-00 00:00:00' COMMENT "创建时间",
 	gmt_modified timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT "更新时间",
 	PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT=utf8 AUTO_INCREMENT=1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
